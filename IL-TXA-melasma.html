@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>肝斑 IL-TXA 臨床指引</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      background: #f2f1ed;
+      color: #1a1a18;
+      padding: 1rem 0.75rem 2.5rem;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-text-size-adjust: 100%;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 14px;
+      color: #993C1D;
+      text-decoration: none;
+      margin-bottom: 0.85rem;
+      padding: 0.25rem 0;
+    }
+    .page {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.25rem 1.1rem 2rem;
+      border: 0.5px solid rgba(0,0,0,0.09);
+    }
+    .hero {
+      border-left: 4px solid #993C1D;
+      padding: 0.6rem 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1a1a18;
+      margin: 0 0 4px;
+      line-height: 1.35;
+    }
+    .hero p {
+      font-size: 13px;
+      color: #777770;
+      line-height: 1.5;
+    }
+    .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      color: #993C1D;
+      text-transform: uppercase;
+      margin: 1.5rem 0 0.55rem;
+    }
+    .card {
+      background: #fff;
+      border: 0.5px solid rgba(0,0,0,0.13);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 0.65rem;
+      align-items: flex-start;
+    }
+    .row:last-child { margin-bottom: 0; }
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #D85A30;
+      flex-shrink: 0;
+      margin-top: 8px;
+    }
+    .row-text {
+      font-size: 16px;
+      color: #1a1a18;
+      line-height: 1.65;
+    }
+    .dil-list { display: flex; flex-direction: column; gap: 0.6rem; }
+    .dil-card {
+      border: 0.5px solid rgba(0,0,0,0.12);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .dil-left { min-width: 80px; }
+    .dil-ratio { font-size: 20px; font-weight: 600; color: #1a1a18; }
+    .dil-conc  { font-size: 14px; color: #888780; margin-top: 1px; }
+    .badge {
+      display: inline-block;
+      font-size: 13px;
+      padding: 3px 10px;
+      border-radius: 99px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .badge-pilot  { background: #EAF3DE; color: #3B6D11; }
+    .badge-patchy { background: #E6F1FB; color: #0C447C; }
+    .badge-focal  { background: #FAEEDA; color: #633806; }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .metric-box {
+      background: #f7f6f2;
+      border-radius: 10px;
+      padding: 0.75rem 0.9rem;
+    }
+    .metric-label { font-size: 12px; color: #888780; margin: 0 0 3px; }
+    .metric-value { font-size: 22px; font-weight: 600; color: #1a1a18; margin: 0; line-height: 1.2; }
+    .metric-unit  { font-size: 14px; font-weight: 400; color: #888780; }
+    .metric-note  { font-size: 12px; color: #888780; margin-top: 3px; line-height: 1.4; }
+    .divider { border: none; border-top: 0.5px solid rgba(0,0,0,0.1); margin: 0.85rem 0; }
+    .session-list { display: flex; flex-direction: column; gap: 0.6rem; }
+    .session-block {
+      border: 0.5px solid rgba(0,0,0,0.12);
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+    }
+    .session-type { font-size: 12px; color: #888780; margin: 0 0 4px; }
+    .session-val  { font-size: 17px; font-weight: 500; color: #1a1a18; margin: 0; line-height: 1.4; }
+    .warn-strip {
+      background: #FCEBEB;
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-top: 0.75rem;
+    }
+    .warn-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+    .warn-text { font-size: 15px; color: #791F1F; line-height: 1.6; }
+    .footnote {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 1.5rem;
+      line-height: 1.75;
+      border-top: 0.5px solid rgba(0,0,0,0.08);
+      padding-top: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="back-link" href="index.html">‹ 返回目錄</a>
+
+  <div class="page">
+    <div class="hero">
+      <h1>肝斑皮內傳明酸注射<br>（IL-TXA）</h1>
+      <p>Intralesional Tranexamic Acid for Melasma<br>研討會臨床建議摘要</p>
+    </div>
+
+    <div class="section-label">術前準備</div>
+    <div class="card">
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text">塗抹 EMLA 麻醉藥膏，等待 <strong>30–40 分鐘</strong>後再進行注射</div>
+      </div>
+    </div>
+
+    <div class="section-label">藥物稀釋方案（Dilutions）</div>
+    <div class="card">
+      <div class="row" style="margin-bottom: 0.85rem;">
+        <div class="dot"></div>
+        <div class="row-text">原液：傳明酸注射液 500mg/5ml（<strong>100 mg/ml</strong>），以生理食鹽水稀釋</div>
+      </div>
+      <div class="dil-list">
+        <div class="dil-card">
+          <div class="dil-left">
+            <div class="dil-ratio">1:20</div>
+            <div class="dil-conc">5 mg/ml</div>
+          </div>
+          <span class="badge badge-pilot">先導研究標準濃度</span>
+        </div>
+        <div class="dil-card">
+          <div class="dil-left">
+            <div class="dil-ratio">1:10</div>
+            <div class="dil-conc">10 mg/ml</div>
+          </div>
+          <span class="badge badge-patchy">高稀釋 — 片狀彌漫型</span>
+        </div>
+        <div class="dil-card">
+          <div class="dil-left">
+            <div class="dil-ratio">1:1</div>
+            <div class="dil-conc">100 mg/ml</div>
+          </div>
+          <span class="badge badge-focal">低稀釋 — 局部顯著型</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">注射技術與劑量</div>
+    <div class="card">
+      <div class="metric-grid">
+        <div class="metric-box">
+          <p class="metric-label">注射深度</p>
+          <p class="metric-value">2 <span class="metric-unit">mm</span></p>
+          <p class="metric-note">形成淺層皮丘<br>（superficial bleb）</p>
+        </div>
+        <div class="metric-box">
+          <p class="metric-label">注射角度</p>
+          <p class="metric-value">5–15 <span class="metric-unit">度</span></p>
+          <p class="metric-note">近乎平行於<br>皮膚表面</p>
+        </div>
+        <div class="metric-box">
+          <p class="metric-label">注射間距</p>
+          <p class="metric-value">1 <span class="metric-unit">cm</span></p>
+        </div>
+        <div class="metric-box">
+          <p class="metric-label">使用針頭</p>
+          <p class="metric-value" style="font-size:19px;">30G</p>
+          <p class="metric-note">胰島素針頭</p>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text">單點劑量：<strong>0.05 mL（2U）</strong></div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text">每支針筒最多 <strong>8 mg</strong></div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text">單次療程最高：<strong>15 mg</strong>（約 3 支針筒）</div>
+      </div>
+    </div>
+
+    <div class="section-label">療程規劃</div>
+    <div class="card">
+      <div class="session-list">
+        <div class="session-block">
+          <p class="session-type">密集療程（研究方案）</p>
+          <p class="session-val">每週一次 × 12 週（共 12 次）</p>
+        </div>
+        <div class="session-block">
+          <p class="session-type">標準療程（講師建議）</p>
+          <p class="session-val">每兩週一次 × 5–6 次（共 10–12 週）</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">臨床觀察與總結</div>
+    <div class="card">
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text"><strong>安全性：</strong>較口服傳明酸具有更廣的安全性</div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text"><strong>效果：</strong>有效且高效（Effective &gt;&gt; Efficacious）</div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text"><strong>患者篩選：</strong>建議配合皮膚鏡（Dermoscopy）進行術前評估</div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text"><strong>機轉優勢：</strong>針對多因子致病機轉；真皮層介入可能有助防止復發</div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text"><strong>顯著改善：</strong>通常在治療後 <strong>6–8 週</strong>出現</div>
+      </div>
+      <div class="row">
+        <div class="dot"></div>
+        <div class="row-text"><strong>最佳適應：</strong>表皮型肝斑（Epidermal Melasma）反應最快且最好</div>
+      </div>
+      <div class="warn-strip">
+        <span class="warn-icon">⚠️</span>
+        <div class="warn-text">
+          <strong>注意副作用：</strong>燒灼感、刺痛感、血腫（Hematoma）。可加入 Lignocaine 減輕不適。
+        </div>
+      </div>
+    </div>
+
+    <p class="footnote">
+      ※ 本摘要依研討會投影片整理，僅供醫療專業人員參考。臨床應用請依患者實際狀況與藥品仿單進行專業判斷。<br>
+      ※ 每支針筒最多 8 mg 與單次最高 15 mg 分別來自不同投影片（Procedure 頁 vs. The Works 頁）。
+    </p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Notes</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      background: #f2f1ed;
+      color: #1a1a18;
+      padding: 1.5rem 1rem 3rem;
+      -webkit-text-size-adjust: 100%;
+    }
+    .page {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.5rem 1.25rem 2rem;
+      border: 0.5px solid rgba(0,0,0,0.09);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .hero {
+      border-left: 4px solid #993C1D;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1.75rem;
+    }
+    .hero h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1a1a18;
+      margin: 0 0 3px;
+    }
+    .hero p {
+      font-size: 13px;
+      color: #888780;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      color: #993C1D;
+      text-transform: uppercase;
+      margin: 1.25rem 0 0.5rem;
+    }
+    .note-list { display: flex; flex-direction: column; gap: 0.5rem; }
+    .note-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border: 0.5px solid rgba(0,0,0,0.12);
+      border-radius: 12px;
+      padding: 0.85rem 1rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+    }
+    .note-card:hover { background: #f7f6f2; }
+    .note-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #FAECE7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .note-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #1a1a18;
+      margin: 0 0 2px;
+    }
+    .note-sub {
+      font-size: 12px;
+      color: #888780;
+    }
+    .arrow {
+      margin-left: auto;
+      font-size: 18px;
+      color: #ccc;
+      flex-shrink: 0;
+    }
+    .footnote {
+      font-size: 11px;
+      color: #bbb;
+      margin-top: 2rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <h1>Clinical Notes</h1>
+    <p>DrJwill — 研討會筆記與臨床參考</p>
+  </div>
+
+  <div class="section-label">皮膚科</div>
+  <div class="note-list">
+    <a class="note-card" href="IL-TXA-melasma.html">
+      <div class="note-icon">💉</div>
+      <div>
+        <div class="note-title">肝斑皮內傳明酸注射（IL-TXA）</div>
+        <div class="note-sub">Intralesional Tranexamic Acid for Melasma</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+    <!-- 之後新增文件在這裡加一個 note-card -->
+  </div>
+
+  <p class="footnote">僅供醫療專業人員參考</p>
+
+</div>
+</body>
+</html>
